@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -14,16 +15,19 @@
             margin: 0;
         }
 
-        form {
+        .login-container {
+            background-color: white;
             border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
         }
 
         label {
             display: block;
             margin-bottom: 8px;
+            color: #333;
         }
 
         input {
@@ -40,19 +44,22 @@
             border: none;
             border-radius: 3px;
             cursor: pointer;
-            align-items: center;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <form>
-        <label for="username">Usuario:</label>
-        <input type="text" id="username" name="username" required>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-        <label for="password">contraseña:</label>
-        <input type="password" id="password" name="password" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-        <button type="submit">Iniciar sesion</button>
-    </form>
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
